@@ -38,11 +38,12 @@ const DetailPage = () => {
                 } else {
                     setDrool('Most Drooling');
                 }
-                if (response.data[0].groomimg <3) {
-                    setGroom('Minimal Grooming Needs')
+                if (response.data[0].grooming <= 3) {
+                    setGroom('Minimal Grooming Needs');
                 } else {
-                    setGroom('Need to Groomed')
+                    setGroom('Needs to be Groomed');
                 }
+
         } catch (error) {
         console.error(error.message);
         }
@@ -51,6 +52,8 @@ const DetailPage = () => {
     useEffect(() => {
         dataDog(name);
     }, [name]);
+
+    console.log(dog);
 
     return(
         <div className="w-[90%] m-[auto] rounded-[20px] max-w-[1000px] text-white bg-[rgb(230,168,157,0.5)]">
