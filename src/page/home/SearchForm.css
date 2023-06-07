@@ -1,0 +1,9 @@
+.dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.9s ease;
+}
+
+.dropdown.show {
+    max-height: 2000px;
+}
