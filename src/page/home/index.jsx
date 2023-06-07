@@ -1,13 +1,11 @@
 import SearchForm from "@/components/searchForm/SearchForm";
 import { useState } from "react";
 import './SearchForm.css'
-import {useDogListStore} from '../../store/dogList'
 
 
 const Homepage = () => {
 
     const [showSearch, setShowSearch] = useState(false);
-    const { dog, fetchDog }=useDogListStore()
 
     const handleClick = () => {
         if(showSearch == false){
@@ -40,33 +38,53 @@ const Homepage = () => {
             <section className="bg-[#998D65] pt-[30px]" id="learn">
                 <div className="pl-[40px] text-start">
                     <h1 className="text-4xl bg-pink" >What's about BokBok...</h1>
-                    <p className="m-[90px]">BokBok is website for find match breed of dog for your personality.</p>
+                    <p className="">BokBok is website for find match breed of dog for your personality.</p>
+
+
                 </div>
-                <div className="text-center">
-                    <h1>How to find...</h1>
-                    <div>
-                        <h3>Breed</h3>
-                        <p>Search breed's name for learn about nature of breed. don't forget every breed have different nature and different treat not just about how cute is it</p>
+                <h1 className="text-center text-xl">How to find...</h1>
+                <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-6  ">
+                    <div className="flex flex-col bg-white m-[10px] h-[350px] lg:h-[350px] 2xl:h-[475px]" >
+                        <h1 className="m-[10px] border-b-[1px] text-center pb-[10px]">Breed</h1>
+                        <p className="mx-[10px]">Search breed's name for learn about nature of breed. don't forget every breed have different nature and different treat not just about how cute is it</p>
+                        <div className="flex justify-center">
+                            <img className="w-[4.5em]" src="/source/akitas-svgrepo-com.png"/>
+                            <img className="w-[4.5em]" src="/source/bulterrier-svgrepo-com.png" />
+                        </div>
+                        <div className="flex justify-center">
+                            <img className="w-[4.5em]" src="/source/chihuahua-svgrepo-com.png"/>
+                            <img className="w-[4.5em]" src="/source/yorkshire-terrier-svgrepo-com.png" />
+                        </div>
                     </div> 
-                    <div>
-                        <h3>Bark</h3>
-                        <p>This's about bark's nature. Lv.1 to Lv.5 is number of level least to high. It's important especially when you live in Apartment</p>
+                    <div className="flex flex-col bg-white m-[10px] h-[350px] lg:h-[350px] 2xl:h-[475px]">
+                        <h3 className="m-[10px] border-b-[1px] text-center pb-[10px]">Bark</h3>
+                        <p className="mx-[10px]">This's about bark's nature. Lv.1 to Lv.5 is number of level least to high. It's important especially when you live in Apartment</p>
+                        <img className="w-[7em]" src="/source/guard-dog-svgrepo-com.png" alt="" />
                     </div>
-                    <div>
-                        <h3>Size</h3>
-                        <p></p>
+                    <div className="flex flex-col bg-white m-[10px] h-[425px] lg:h-[350px] 2xl:h-[475px]">
+                        <h3 className="m-[10px] border-b-[1px] text-center pb-[10px]">Size</h3>
+                        <p className="mx-[10px]">You can choose size of dog to match your actibility or your house</p>
+                        <div className="flex">
+                            <img className="w-[5.5em]" src="/source/dachshund-svgrepo-com.png" alt="" />
+                            <img className="w-[7em]" src="/source/doberman-svgrepo-com.png" alt="" />
+                        </div>
                     </div>
-                    <div>
-                        <h3>Energy</h3>
-                        <p>This's about dog's energy. Lv.1 to Lv. 4 is number of level least to high. if dog have high energy it's mean dog need to walk outside and people to play with At the same time when dogs have high energy sometime they play hard and sometime will hurt, so it's not recomment for house have baby </p>
+                    <div className="flex flex-col bg-white m-[10px] h-[425px] lg:h-[400px] 2xl:h-[475px]">
+                        <h3 className="m-[10px] border-b-[1px] text-center pb-[10px]">Energy</h3>
+                        <p className="mx-[10px]">This's about dog's energy. Lv.1 to Lv. 4 is number of level least to high. if dog have high energy it's mean dog need to walk outside and people to play with At the same time when dogs have high energy sometime they play hard and sometime will hurt, so it's not recomment for house have baby </p>
+                        <img className="w-[9em]" src="/source/man-throwing-a-disc-and-dog-jumping-to-catch-it-svgrepo-com.png" alt="" />
                     </div>
-                    <div>
-                        <h3>Trainability</h3>
-                        <p>This's about rate to train Lv. 1 is easy to train and Lv.5 it's not about intelligent but it's about focus ability, solitude and love freedom</p>
+                    <div className="flex flex-col bg-white m-[10px] h-[350px] lg:h-[400px] 2xl:h-[475px]">
+                        <h3 className="m-[10px] border-b-[1px] text-center pb-[10px]">Trainability</h3>
+                        <p className="mx-[10px]">This's about rate to train Lv. 1 is easy to train and Lv.5 it's not about intelligent but it's about focus ability, solitude and love freedom</p>
+                        <img className="w-[8em]" src="/source/dog-in-front-of-a-man-svgrepo-com.png" alt="" />
                     </div>
-                    <div>
-                        <h3>Protectiveness</h3>
-                        <p>This's about rate to alert stranger Lv.1 is calm when saw stanger Lv.5 is alert when saw stanger. But it doesn't mean they will attack stranger that depend on how to treat them</p>
+                    <div className="flex flex-col bg-white m-[10px] h-[350px] lg:-[400px] 2xl:h-[475px]">
+                        <div>
+                        <h3 className="m-[10px] border-b-[1px] text-center pb-[10px]">Protectiveness</h3>
+                        <p className="mx-[10px]">This's about rate to alert stranger Lv.1 is calm when saw stanger Lv.5 is alert when saw stanger. But it doesn't mean they will attack stranger that depend on how to treat them</p>
+                        </div>
+                        <img className="w-[8em]" src="/source/dog-puppy-and-his-owner-looking-to-opposite-directions-svgrepo-com.png" alt="" />
                     </div>
                 </div>
             </section>
