@@ -24,15 +24,15 @@ export const bark = [
 export const size = [
     {
         name:'Small',
-        level:9,
+        level:10,
     },
     {
         name:'Medium',
-        level:16,
+        level:50,
     },
     {
         name:'Large',
-        level:40,
+        level:100,
     }
 ]
 

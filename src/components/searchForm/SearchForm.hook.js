@@ -14,7 +14,7 @@ const useSearchForm = async (watchFields) => {
       energy: energy || null,
       trainability: trainability ||  null,
       protectiveness: protectiveness || null,
-      max_height: size || null
+      max_weight: size || null
     },
     headers: {
       'X-API-Key': 'ncoM+zs5Dj7yTt9n7i6AGA==OCAq9Y5AjQSE3QXX',
