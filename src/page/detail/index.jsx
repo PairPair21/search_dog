@@ -54,12 +54,8 @@ const DetailPage = () => {
     }, [name]);
 
     return(
-        <div className="w-[90%] m-[auto] rounded-[20px] max-w-[1000px] text-white bg-[rgb(230,168,157,0.5)]">
+        <div >
             <div className="w-[90%] max-w-[1000px] m-[auto] p-[10px] mt-[20px]">
-                <div className="flex items-center justify-center hover:bg-sky-700 bg-[#6FC1EA] w-[60px] h-[40px] rounded-[16px] shadow-lg shadow-blue-500/50 opacity-50 mt-[10px]">
-                    <Link to={'/'} className="text-white text-xl w-[60px] text-center font-bold">&#x3C;</Link>
-                </div>
-
                 {dog.loading && (
                     <div className="flex justify-center item-center">
                         <img className="w-[60px]" src="/source/480 (1).gif" alt="" />
@@ -70,19 +66,23 @@ const DetailPage = () => {
                     <div>
                         { dog.data && (
                             <div className="overflow-y-auto m-[auto]">
-                                <div className=' relative h-[350px]'> 
-                                    <img className="absolute h-[70%]  sm:h-[350px] p-[40px] translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%]" 
+                                <div className='flex flex-cols bg-[#3C69E8] h-[60px] w-[100%]  p-[10px]'>
+                                    <span className="flex items-center hover:bg-sky-700 bg-[#6FC1EA] w-[60px] h-[40px] rounded-[16px] shadow-lg shadow-blue-500/50 opacity-50">
+                                        <Link to={'/'} className="text-white text-xl w-[60px] text-center font-bold">&#x3C;</Link>
+                                    </span>
+                                    <span className=" text-center
+                                    capitalize mb-2 text-3xl font-bold tracking-tight m-[auto]">
+                                        {dog.data[0].name}
+                                    </span>
+                                </div>
+                                <div className=' relative h-[250px] sm:h-[350px]'> 
+                                    <img className="absolute h-[70%] h-[250px] sm:h-[350px] p-[40px] translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%]" 
                                     src={dog.data[0].image_link}
                                     alt="" />
                                 </div>
-                                <div className="bg-[#253641] rounded-[20px] p-[20px] my[20px]">
-                                    <div className='flex flex-col'>
-                                        <h5 className=" text-center
-                                        capitalize mb-2 text-3xl font-bold tracking-tight ">
-                                            {dog.data[0].name}
-                                        </h5>
-                                    </div>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-[10px] my-[10px] font-bold">
+                                <div className="bg-[#253641] rounded-[20px] my[20px]">
+                                    
+                                    <div className="grid grid-cols-1 rounded-t-[20px] py-[20px] md:grid-cols-2 bg-[#FCCABF] w-[100%] gap-[15px] px-[30px] py-[10px] font-bold">
                                         <p>Drooling : {drool}</p>
                                         <p>Grooming : {groom}</p>
                                         <p>Min Height : {((dog.data[0].min_height_female)*0.0254).toFixed(2)} m</p>
@@ -92,7 +92,7 @@ const DetailPage = () => {
                                         <p>Min Life : {dog.data[0].min_life_expectancy} years</p>
                                         <p>Max Life : {dog.data[0].max_life_expectancy} years</p>
                                     </div>
-                                    <div className="grid grid-cols-1 md:grid-cols-2  gap-[20px] capitalize">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 bg-[#A8C5CD] rounded-b-[20px] gap-[20px] px-[30px] capitalize">
                                     {/* <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
                                         <div className="grow-[0] bg-lime-500 h-[15px]"></div>
                                         <div className="grow-[5] bg-[rgb(224,185,180,0.3)] h-[15px]"></div>
