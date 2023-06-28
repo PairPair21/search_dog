@@ -8,8 +8,6 @@
     max-height: 2000px;
 }
 
-body {
-    font-family: 'Archivo Narrow';
-    font-size: 22px;
-    letter-spacing: 0.5px;
+body{
+    font-family: 'Athiti',Archivo Narrow, sans-serif;
 }

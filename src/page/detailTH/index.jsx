@@ -2,11 +2,11 @@ import React,{ useEffect, useState } from "react";
 import { Link, Route, Routes, useParams } from "react-router-dom";
 import axios from "axios";
 
-const DetailPage = () => {
+const DetailPageTH = () => {
     const { name } = useParams();
     const [drool, setDrool]=useState(undefined);
     const [groom,setGroom]=useState(undefined);
-    const [linkName,setLinkName]= useState('');
+    const [linkName,setLinkName] = useState('');
 
     const[dog, setDog] = useState({
             data:undefined, 
@@ -36,16 +36,16 @@ const DetailPage = () => {
                 });
                 setLinkName(response.data[0].name)
                 if (response.data[0].drooling <= 3) {
-                    setDrool('Less Drooling');
+                    setDrool('มีน้ำลายน้อย');
                 } else {
-                    setDrool('Most Drooling');
+                    setDrool('มีน้ำลายเยอะ');
                 }
                 if (response.data[0].grooming <= 1) {
-                    setGroom('Less Grooming Needs');
+                    setGroom('การดูแลขนระดับต่ำ');
                 }else if(response.data[0].grooming <= 3){
-                    setGroom('Minimal Grooming Needs');
+                    setGroom('การดูแลขนในระดับทั่วไป');
                 } else{
-                    setGroom('Needs to be Groomed');
+                    setGroom('การดูแลเป็นพิเศษ');
                 }
 
         } catch (error) {
@@ -65,9 +65,9 @@ const DetailPage = () => {
                     <span className="text-white font-bold text-xl">BokBok</span>
                 </div>
                 <div className="flex items-center">
-                    <Link className="flex items-center" to={`/TH/dog/${linkName}`}>
-                        <img className="h-[20px] mr-[5px]" src="https://cdn.pixabay.com/photo/2012/04/10/23/01/thailand-26813_1280.png" alt="" srcset="" />
-                        <div className="text-white mr-[20px]">TH</div>
+                    <Link className="flex items-center" to={`/dog/${linkName}`}>
+                        <img className="h-[20px] mr-[5px]" src="https://www.pngall.com/wp-content/uploads/2016/06/United-Kingdom-Flag-PNG-Image.png" alt="" srcset="" />
+                        <div className="text-white mr-[20px]">EN</div>
                     </Link>
                 </div>
             </header>
@@ -83,7 +83,7 @@ const DetailPage = () => {
                             <div className="overflow-y-auto m-[auto]">
                                 <div className='flex flex-cols bg-[#3C69E8] h-[60px] w-[100%]  p-[10px]'>
                                     <span className="flex items-center hover:bg-sky-700 bg-[#6FC1EA] w-[60px] h-[40px] rounded-[16px] shadow-lg shadow-blue-500/50 opacity-50">
-                                        <Link to={'/'} className="text-white text-xl w-[60px] text-center font-bold">&#x3C;</Link>
+                                        <Link to={'/TH'} className="text-white text-xl w-[60px] text-center font-bold">&#x3C;</Link>
                                     </span>
                                     <span className=" text-center
                                     capitalize mb-2 text-3xl font-bold tracking-tight m-[auto]">
@@ -98,14 +98,14 @@ const DetailPage = () => {
                                 <div className="bg-[#253641] rounded-[20px] my[20px]">
                                     
                                     <div className="grid grid-cols-1 rounded-t-[20px] py-[20px] md:grid-cols-2 bg-[#FCCABF] w-[100%] gap-[15px] px-[30px] py-[10px] font-bold">
-                                        <p>Drooling : {drool}</p>
-                                        <p>Grooming : {groom}</p>
-                                        <p>Min Height : {((dog.data[0].min_height_female)*0.0254).toFixed(2)} m</p>
-                                        <p>Max Height : {((dog.data[0].max_height_female)*0.0254).toFixed(2)} m</p>
-                                        <p>Min Weight : {((dog.data[0].min_weight_female)*0.4536).toFixed(2)} kg</p>
-                                        <p>Max Weight : {((dog.data[0].max_weight_female)*0.4536).toFixed(2)} kg</p>
-                                        <p>Min Life : {dog.data[0].min_life_expectancy} years</p>
-                                        <p>Max Life : {dog.data[0].max_life_expectancy} years</p>
+                                        <p>ความมากของน้ำลาย : {drool}</p>
+                                        <p>ต้องการการดูแลขน : {groom}</p>
+                                        <p>ความสูงต่ำสุด : {((dog.data[0].min_height_female)*0.0254).toFixed(2)} ม.</p>
+                                        <p>ความสูงมากสุด : {((dog.data[0].max_height_female)*0.0254).toFixed(2)} ม.</p>
+                                        <p>น้ำหนักต่ำสุด : {((dog.data[0].min_weight_female)*0.4536).toFixed(2)} กก.</p>
+                                        <p>น้ำหนักสูงสุด : {((dog.data[0].max_weight_female)*0.4536).toFixed(2)} กก.</p>
+                                        <p>ช่วงอาายุที่สั้นที่สุด : {dog.data[0].min_life_expectancy} ปี</p>
+                                        <p>ช่วงอายุที่ยาวที่สุด : {dog.data[0].max_life_expectancy} ปี</p>
                                     </div>
                                     <div className="grid grid-cols-1 md:grid-cols-2 bg-[#A8C5CD] rounded-b-[20px] gap-[20px] px-[30px] capitalize">
                                     {/* <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
@@ -133,49 +133,49 @@ const DetailPage = () => {
                                         <div className="grow-[0] bg-[rgb(224,185,180,0.3)] h-[15px]"></div>
                                     </div> */}
                                         <div>
-                                            <h5>barking</h5>
+                                            <h5>ความถี่ในการเห่า</h5>
                                             <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
                                                 <div className={`grow-[${dog.data[0].barking}] bg-lime-500 h-[15px] `}></div>
                                                 <div className={`grow-[${(5 - dog.data[0].barking)}] bg-[rgb(224,185,180,0.3)] h-[15px]`}></div>
                                             </div>
                                         </div>
                                         <div>
-                                            <h5>energy</h5>
+                                            <h5>ระดับพลังงาน</h5>
                                             <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
                                                 <div className={`grow-[${dog.data[0].energy}] bg-lime-500 h-[15px]`}></div>
                                                 <div className={`grow-[${(5 - dog.data[0].energy)}] bg-[rgb(224,185,180,0.3)] h-[15px]`}></div>
                                             </div>
                                         </div>
                                         <div>
-                                            <h5>playfulness</h5>
+                                            <h5>ความขี้เล่น</h5>
                                             <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
                                                 <div className={`grow-[${dog.data[0].playfulness}] bg-lime-500 h-[15px]`}></div>
                                                 <div className={`grow-[${(5 - dog.data[0].playfulness)}] bg-[rgb(224,185,180,0.3)] h-[15px]`}></div>
                                             </div>
                                         </div>
                                         <div>
-                                            <h5>trainability</h5>
+                                            <h5>ควาามยากในการฝึก</h5>
                                             <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
                                                 <div className={`grow-[${dog.data[0].trainability}] bg-lime-500 h-[15px]`}></div>
                                                 <div className={`grow-[${(5 - dog.data[0].trainability)}] bg-[rgb(224,185,180,0.3)] h-[15px]`}></div>
                                             </div>
                                         </div>
                                         <div>
-                                            <h5>Save for Children</h5>
+                                            <h5>ปลอดภัยต่อเด็ก</h5>
                                             <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
                                                 <div className={`grow-[${dog.data[0].good_with_children}] bg-lime-500 h-[15px]`}></div>
                                                 <div className={`grow-[${(5 - dog.data[0].good_with_children)}] bg-[rgb(224,185,180,0.3)] h-[15px]`}></div>
                                             </div>
                                         </div>
                                         <div>
-                                            <h5>Save for Other dogs</h5>
+                                            <h5>ปลอดภัยต่อสุนัขตัวอื่น</h5>
                                             <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
                                                 <div className={`grow-[${dog.data[0].good_with_other_dogs}] bg-lime-500 h-[15px]`}></div>
                                                 <div className={`grow-[${(5 - dog.data[0].good_with_other_dogs)}] bg-[rgb(224,185,180,0.3)] h-[15px]`}></div>
                                             </div>
                                         </div>
                                         <div className="mb-[20px]">
-                                            <h5>Save for strangers</h5>
+                                            <h5>ปลอดภัยจากคนแปลกหน้า</h5>
                                             <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
                                                 <div className={`grow-[${dog.data[0].good_with_strangers}] bg-lime-500 h-[15px]`}></div>
                                                 <div className={`grow-[${(5 - dog.data[0].good_with_strangers)}] bg-[rgb(224,185,180,0.3)] h-[15px]`}></div>
@@ -192,4 +192,4 @@ const DetailPage = () => {
     )
 }
 
-export default DetailPage;
+export default DetailPageTH;
