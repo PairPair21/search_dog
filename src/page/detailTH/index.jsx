@@ -74,7 +74,7 @@ const DetailPageTH = () => {
             <div className="w-[90%] max-w-[1000px] m-[auto] p-[10px] mt-[20px]">
                 {dog.loading && (
                     <div className="w-[100%] h-[85vh] flex justify-center items-center">
-                        <img className="w-[100px]" src="/src/assets/480 (3).gif" alt="" />
+                        <img className="w-[100px]" src="src/assets/480 (3).gif" alt="" />
                     </div>
                 )}  
                 {!dog.loading &&(

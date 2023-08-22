@@ -79,41 +79,41 @@ const HomepageTH = () => {
                         <h1 className="m-[10px] border-b-[1px] text-center pb-[10px] font-mono text-2xl font-bold">Breed</h1>
                         <p className="mx-[15px] h-[150px] lg:h-[160px] 2xl:h-[275px] text-xl font-bold"> ค้นหาข้อมูลสายพันธุ์ด้วยชื่อของสายพันธุ์ด้วยภาษาอังกฤษ เพื่อศึกษาข้อมูลของแต่ละสายพันธุ์ และต้องไม่ลืมว่าแต่ละสายพันธุ์ต้องการการเลี้ยงดูที่แตกต่างกัน ไม่ได้ต่างกันเพียงรูปลักษณ์ภายนอกเท่านั้น</p>
                         <div className="grid grid-cols-2 grid-rows-2 mb-[10px]">
-                            <img className="w-[3em] justify-self-end" src="/src/assets/akitas-svgrepo-com.png"/>
-                            <img className="w-[3em]" src="/src/assets/bulterrier-svgrepo-com.png" />
-                            <img className="w-[3em] justify-self-end" src="/src/assets/chihuahua-svgrepo-com.png"/>
-                            <img className="w-[3em]" src="/src/assets/yorkshire-terrier-svgrepo-com.png" />
+                            <img className="w-[3em] justify-self-end" src="src/assets/akitas-svgrepo-com.png"/>
+                            <img className="w-[3em]" src="src/assets/bulterrier-svgrepo-com.png" />
+                            <img className="w-[3em] justify-self-end" src="src/assets/chihuahua-svgrepo-com.png"/>
+                            <img className="w-[3em]" src="src/assets/yorkshire-terrier-svgrepo-com.png" />
                         </div>
                     </div> 
                     <div className="flex flex-col bg-white m-[10px] h-[350px] lg:h-[350px] 2xl:h-[475px]">
                         <h3 className="m-[10px] border-b-[1px] text-center pb-[10px] font-mono text-2xl font-bold">Bark</h3>
                         <p className="mx-[15px] h-[150px] lg:h-[160px] 2xl:h-[275px] text-xl font-bold">ระบุเกี่ยวกับธรรมชาติของการเห่าในสายพันธุ์นั้น จากระดับ 1 ถึงระดับ 5 เป็นเรื่องที่ต้องพิจารณาหากมีข้อจำกัดด้านที่อยู่อาศัย</p>
-                        <img className="w-[5em] self-center  mb-[10px]" src="/src/assets/guard-dog-svgrepo-com.png" alt="" />
+                        <img className="w-[5em] self-center  mb-[10px]" src="src/assets/guard-dog-svgrepo-com.png" alt="" />
                     </div>
                     <div className="flex flex-col bg-white m-[10px] h-[425px] lg:h-[350px] 2xl:h-[475px]">
                         <h3 className="m-[10px] border-b-[1px] text-center pb-[10px] font-mono text-2xl font-bold">Size</h3>
                         <p className="mx-[10px] h-[225px] lg:h-[160px] 2xl:h-[275px] text-2xl font-bold">เลือกขนาดของสุนัขให้เหมาะกับพื้นที่ที่อยู่อาศัย</p>
                         <div className="flex self-center mb-[10px]">
-                            <img className="w-[4em] self-end" src="/src/assets/dachshund-svgrepo-com.png" alt="" />
-                            <img className="w-[6em] " src="/src/assets/doberman-svgrepo-com.png" alt="" />
+                            <img className="w-[4em] self-end" src="src/assets/dachshund-svgrepo-com.png" alt="" />
+                            <img className="w-[6em] " src="src/assets/doberman-svgrepo-com.png" alt="" />
                         </div>
                     </div>
                     <div className="flex flex-col bg-white m-[10px] h-[425px] lg:h-[400px] 2xl:h-[475px]">
                         <h3 className="m-[10px] border-b-[1px] text-center pb-[10px] font-mono text-2xl font-bold">Energy</h3>
                         <p className="mx-[15px] h-[225px] lg:h-[195px] 2xl:h-[275px] text-lg font-bold">ค่าพลังงานของสุนัข โดยมีลำดับ 1 ถึง 4 จากน้อยไปมาก หากสุนัขมีพลังงานที่สูงนั้นอาจต้องการการดูแลเรื่องการพาไปเดินเล่นหรือมีการเล่นด้วยที่มากเป็นพิเศษ และสุนัขที่มีพลังงานสูงนั้นอาจเล่นแรงเกิดไปจนทำให้เกิดการบาดเจ็บจากการเล่นโดยที่ไม่ได้ตั้งใจได้</p>
-                        <img className="w-[6em] self-center mb-[10px]" src="/src/assets/man-throwing-a-disc-and-dog-jumping-to-catch-it-svgrepo-com.png" alt="" />
+                        <img className="w-[6em] self-center mb-[10px]" src="src/assets/man-throwing-a-disc-and-dog-jumping-to-catch-it-svgrepo-com.png" alt="" />
                     </div>
                     <div className="flex flex-col bg-white m-[10px] h-[400px] lg:h-[400px] 2xl:h-[475px]">
                         <h3 className="m-[10px] border-b-[1px] text-center pb-[10px] font-mono text-2xl font-bold">Trainability</h3>
                         <p className="mx-[15px] h-[150px] lg:h-[195px] 2xl:h-[300px] text-lg font-bold">เป็นค่าความยากต่อการฝึกฝน จากระดับ 1 ถึง 5 ค่านี้ไม่ได้บ่งบอกถึงความฉลาดของสายพันธุ์เนื่องจากมีข้อพิจารณาเพิ่มเติมอยู่ด้วย อาธิความสามารถในการโฟกัสต่อสิ่งใดสิ่งหนึ่ง ความต้องการเป็นอิสระ หรือแม้แต่ความต้องการอยู่อย่างสันโดษ นั้นก็เป็นปัจจัยหนึ่งในการพิจารณาด้วยเช่นกัน</p>
-                        <img className="w-[5em] mb-[10px] self-center" src="/src/assets/dog-in-front-of-a-man-svgrepo-com.png" alt="" />
+                        <img className="w-[5em] mb-[10px] self-center" src="src/assets/dog-in-front-of-a-man-svgrepo-com.png" alt="" />
                     </div>
                     <div className="flex flex-col bg-white m-[10px] h-[400px] lg:-[400px] 2xl:h-[475px]">
                         <div>
                         <h3 className="m-[10px] border-b-[1px] text-center pb-[10px] font-mono text-2xl font-bold">Protectiveness</h3>
                         <p className="mx-[15px] h-[150px] lg:h-[195px] 2xl:h-[300px] text-lg font-bold">ค่าการตอบสนองต่อการปกป้องเจ้าของเมื่อพบเจอสิ่งแปลกหน้า แต่ทั้งนี้ไม่ได้หมายความว่าสุนัขจะจู่โจมไปที่คนแปลกหน้า การต่อสนองนั้นจะขึ้นอยู่กับการฝึกสุนัข</p>
                         </div>
-                        <img className="w-[5em] mb-[10px] self-center" src="/src/assets/dog-puppy-and-his-owner-looking-to-opposite-directions-svgrepo-com.png" alt="" />
+                        <img className="w-[5em] mb-[10px] self-center" src="src/assets/dog-puppy-and-his-owner-looking-to-opposite-directions-svgrepo-com.png" alt="" />
                     </div>
                 </div>
                 <div className="w-[100%] h-[200px] p-[10px] mt-[20px]">
