@@ -75,7 +75,7 @@ const Homepage = () => {
                 </div>
                 <h1 className="m-[auto] my-[30px] text-center text-4xl pt-[11px] ">How to find...</h1>
                 <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-6">
-                    <div className="flex flex-col bg-white m-[10px] h-[350px] lg:h-[350px] 2xl:h-[475px] " >
+                    <div className="flex flex-col bg-white m-[10px] h-[350px] lg:h-[350px] 2xl:h-[500px] " >
                         <h1 className="m-[10px] border-b-[1px] text-center pb-[10px] font-mono text-2xl font-bold">Breed</h1>
                         <p className="mx-[10px] h-[150px] lg:h-[160px] 2xl:h-[275px] text-lg "> Search for the names of dog breeds to learn about their specific characteristics. Remember, each breed has a unique nature and requires different treatment. It's not just about how cute they are.</p>
                         <div className="grid grid-cols-2 grid-rows-2 mb-[10px]">
@@ -85,12 +85,12 @@ const Homepage = () => {
                             <img className="w-[3em]" src="/source/yorkshire-terrier-svgrepo-com.png" />
                         </div>
                     </div> 
-                    <div className="flex flex-col bg-white m-[10px] h-[350px] lg:h-[350px] 2xl:h-[475px]">
+                    <div className="flex flex-col bg-white m-[10px] h-[350px] lg:h-[350px] 2xl:h-[500px]">
                         <h3 className="m-[10px] border-b-[1px] text-center pb-[10px] font-mono text-2xl font-bold">Bark</h3>
                         <p className="mx-[10px] h-[150px] lg:h-[160px] 2xl:h-[275px] text-lg">This is about the nature of barking. Level 1 to Level 5 represents the intensity of barking, ranging from the lowest to the highest level. This is particularly important when you live in an apartment.</p>
                         <img className="w-[5em] self-center  mb-[10px]" src="/source/guard-dog-svgrepo-com.png" alt="" />
                     </div>
-                    <div className="flex flex-col bg-white m-[10px] h-[425px] lg:h-[350px] 2xl:h-[475px]">
+                    <div className="flex flex-col bg-white m-[10px] h-[425px] lg:h-[350px] 2xl:h-[500px]">
                         <h3 className="m-[10px] border-b-[1px] text-center pb-[10px] font-mono text-2xl font-bold">Size</h3>
                         <p className="mx-[10px] h-[225px] lg:h-[160px] 2xl:h-[275px]">You can choose a dog size that matches your activity level or the size of your house.</p>
                         <div className="flex self-center mb-[10px]">
@@ -98,20 +98,20 @@ const Homepage = () => {
                             <img className="w-[6em] " src="/source/doberman-svgrepo-com.png" alt="" />
                         </div>
                     </div>
-                    <div className="flex flex-col bg-white m-[10px] h-[425px] lg:h-[400px] 2xl:h-[475px]">
+                    <div className="flex flex-col bg-white m-[10px] h-[425px] lg:h-[400px] 2xl:h-[500px]">
                         <h3 className="m-[10px] border-b-[1px] text-center pb-[10px] font-mono text-2xl font-bold">Energy</h3>
-                        <p className="mx-[10px] h-[225px] lg:h-[195px] 2xl:h-[275px] text-lg">This is about the energy level of dogs. Level 1 to Level 4 represents the intensity of energy, ranging from the lowest to the highest level. If a dog has high energy, it means they require regular walks and interaction with people. However, it's important to note that highly energetic dogs can play vigorously and sometimes unintentionally cause harm.</p>
+                        <p className="mx-[10px] h-[225px] lg:h-[195px] 2xl:h-[275px] text-lg 2xl:leading-[1.4rem]">This is about the energy level of dogs. Level 1 to Level 4 represents the intensity of energy. If a dog has high energy, it means they require regular walks and interaction with people. However, it's important that highly energetic dogs can play vigorously and sometimes unintentionally cause harm.</p>
                         <img className="w-[6em] self-center mb-[10px]" src="/source/man-throwing-a-disc-and-dog-jumping-to-catch-it-svgrepo-com.png" alt="" />
                     </div>
-                    <div className="flex flex-col bg-white m-[10px] h-[400px] lg:h-[400px] 2xl:h-[475px]">
+                    <div className="flex flex-col bg-white m-[10px] h-[400px] lg:h-[400px] 2xl:h-[500px]">
                         <h3 className="m-[10px] border-b-[1px] text-center pb-[10px] font-mono text-2xl font-bold">Trainability</h3>
-                        <p className="mx-[10px] h-[150px] lg:h-[195px] 2xl:h-[300px] text-lg">This is about the trainability rating of dogs. Level 1 indicates that a dog is easy to train, while Level 5 refers to factors such as focus ability, solitude, and love for freedom. A higher level doesn't necessarily indicate intelligence, but rather the dog's ability to concentrate, be alone, and desire independence.</p>
+                        <p className="mx-[10px] h-[150px] lg:h-[195px] 2xl:h-[300px] text-lg 2xl:leading-6">This is about the trainability rating of dogs. Level 1 indicates that a dog is easy to train, while Level 5 refers to factors such as focus ability, solitude, and love for freedom. A higher level doesn't necessarily indicate intelligence, but rather the dog's ability to concentrate, be alone, and desire independence.</p>
                         <img className="w-[5em] mb-[10px] self-center" src="/source/dog-in-front-of-a-man-svgrepo-com.png" alt="" />
                     </div>
-                    <div className="flex flex-col bg-white m-[10px] h-[400px] lg:-[400px] 2xl:h-[475px]">
+                    <div className="flex flex-col bg-white m-[10px] h-[400px] lg:-[400px] 2xl:h-[500px]">
                         <div>
                         <h3 className="m-[10px] border-b-[1px] text-center pb-[10px] font-mono text-2xl font-bold">Protectiveness</h3>
-                        <p className="mx-[10px] h-[150px] lg:h-[195px] 2xl:h-[300px] text-lg">This is about the rating for a dog's alertness towards strangers. Level 1 indicates a calm reaction when seeing a stranger, while Level 5 suggests being highly alert in the presence of strangers. However, it's important to note that this rating doesn't necessarily imply that the dog will attack strangers. Their response depends on how they are treated and trained.</p>
+                        <p className="mx-[10px] h-[150px] lg:h-[195px] 2xl:h-[300px] text-lg 2xl:leading-[1.4rem]">This is about the rating for a dog's alertness towards strangers. Level 1 to Level 5 represents degrees of alertness when encountering strangers. However, it's important this rating doesn't necessarily imply that the dog will attack strangers. Their response depends on how they are treated and trained.</p>
                         </div>
                         <img className="w-[5em] mb-[10px] self-center" src="/source/dog-puppy-and-his-owner-looking-to-opposite-directions-svgrepo-com.png" alt="" />
                     </div>

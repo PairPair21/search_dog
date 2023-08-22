@@ -104,7 +104,7 @@ const DetailPageTH = () => {
                                         <p>ความสูงมากสุด : {((dog.data[0].max_height_female)*0.0254).toFixed(2)} ม.</p>
                                         <p>น้ำหนักต่ำสุด : {((dog.data[0].min_weight_female)*0.4536).toFixed(2)} กก.</p>
                                         <p>น้ำหนักสูงสุด : {((dog.data[0].max_weight_female)*0.4536).toFixed(2)} กก.</p>
-                                        <p>ช่วงอาายุที่สั้นที่สุด : {dog.data[0].min_life_expectancy} ปี</p>
+                                        <p>ช่วงอายุที่สั้นที่สุด : {dog.data[0].min_life_expectancy} ปี</p>
                                         <p>ช่วงอายุที่ยาวที่สุด : {dog.data[0].max_life_expectancy} ปี</p>
                                     </div>
                                     <div className="grid grid-cols-1 md:grid-cols-2 bg-[#A8C5CD] rounded-b-[20px] gap-[20px] px-[30px] capitalize">

@@ -116,10 +116,10 @@ const HomepageTH = () => {
                         <img className="w-[5em] mb-[10px] self-center" src="/source/dog-puppy-and-his-owner-looking-to-opposite-directions-svgrepo-com.png" alt="" />
                     </div>
                 </div>
-                <div className="w-[100%] h-[150px] bg-yellow p-[40px]">
-                    <div>อยากรู้อายุของสุนัขของคุณเมื่อเทียบกับอายุของมนุษย์มั้ย?</div>
+                <div className="w-[100%] h-[200px] bg-white p-[10px] mt-[20px]">
+                    <div className="m-[10px]">อยากรู้อายุของสุนัขของคุณเมื่อเทียบกับอายุของมนุษย์มั้ย?</div>
                     <div className="text-center">Let's find!!</div>
-                    <div className=" mx-[20px] flex justify-center h-[100%]  ">
+                    <div className=" mx-[20px] flex justify-center  ">
                         <input className="my-[auto] mx-[20px] border-[2px] w-[200px] h-[40px]" type="text" 
                         value={dogAge} onChange={(e)=>setDogAge(e.target.value)} 
                         onKeyPress={handleKeyPress}
