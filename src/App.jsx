@@ -26,7 +26,7 @@ function App() {
   ])
 
   return (
-    <div className='bg-[url("/source/pexels-miguel-á-padriñán-255379.jpg")] bg-repeat-y bg-cover'>
+    <div className='bg-[url("./assets/pexels-miguel-á-padriñán-255379.jpg")] bg-repeat-y bg-cover'>
       <RouterProvider router={router} />
     </div>
   )
