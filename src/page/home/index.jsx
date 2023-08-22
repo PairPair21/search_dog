@@ -1,4 +1,4 @@
-import SearchForm from "@/components/searchForm/SearchForm";
+import SearchForm from "../../components/searchForm/searchForm";
 import { useState, useEffect } from "react";
 import './SearchForm.css';
 import { Link } from "react-router-dom";
