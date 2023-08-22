@@ -106,14 +106,14 @@ const HomepageTH = () => {
                     <div className="flex flex-col bg-white m-[10px] h-[400px] lg:h-[400px] 2xl:h-[475px]">
                         <h3 className="m-[10px] border-b-[1px] text-center pb-[10px] font-mono text-2xl font-bold">Trainability</h3>
                         <p className="mx-[15px] h-[150px] lg:h-[195px] 2xl:h-[300px] text-lg font-bold">เป็นค่าความยากต่อการฝึกฝน จากระดับ 1 ถึง 5 ค่านี้ไม่ได้บ่งบอกถึงความฉลาดของสายพันธุ์เนื่องจากมีข้อพิจารณาเพิ่มเติมอยู่ด้วย อาธิความสามารถในการโฟกัสต่อสิ่งใดสิ่งหนึ่ง ความต้องการเป็นอิสระ หรือแม้แต่ความต้องการอยู่อย่างสันโดษ นั้นก็เป็นปัจจัยหนึ่งในการพิจารณาด้วยเช่นกัน</p>
-                        <img className="w-[5em] mb-[10px] self-center" src="src/assets/dog-in-front-of-a-man-svgrepo-com.png" alt="" />
+                        <img className="w-[5em] mb-[10px] self-center" src="/src/assets/dog-in-front-of-a-man-svgrepo-com.png" alt="" />
                     </div>
                     <div className="flex flex-col bg-white m-[10px] h-[400px] lg:-[400px] 2xl:h-[475px]">
                         <div>
                         <h3 className="m-[10px] border-b-[1px] text-center pb-[10px] font-mono text-2xl font-bold">Protectiveness</h3>
                         <p className="mx-[15px] h-[150px] lg:h-[195px] 2xl:h-[300px] text-lg font-bold">ค่าการตอบสนองต่อการปกป้องเจ้าของเมื่อพบเจอสิ่งแปลกหน้า แต่ทั้งนี้ไม่ได้หมายความว่าสุนัขจะจู่โจมไปที่คนแปลกหน้า การต่อสนองนั้นจะขึ้นอยู่กับการฝึกสุนัข</p>
                         </div>
-                        <img className="w-[5em] mb-[10px] self-center" src="src/assets/dog-puppy-and-his-owner-looking-to-opposite-directions-svgrepo-com.png" alt="" />
+                        <img className="w-[5em] mb-[10px] self-center" src="/src/assets/dog-puppy-and-his-owner-looking-to-opposite-directions-svgrepo-com.png" alt="" />
                     </div>
                 </div>
                 <div className="w-[100%] h-[200px] p-[10px] mt-[20px]">
