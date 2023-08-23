@@ -1,0 +1,15 @@
+.dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.dropdown.show {
+    max-height: 2000px;
+}
+
+body {
+    font-family: 'Archivo Narrow';
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
