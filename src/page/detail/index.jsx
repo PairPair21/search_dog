@@ -71,7 +71,7 @@ const DetailPage = () => {
                     </Link>
                 </div>
             </header>
-            <div className="w-[90%] max-w-[1000px] m-[auto] p-[10px] mt-[20px]">
+            <div className="w-[90%] bg-white/70 rounded-xl max-w-[1000px] m-[auto] p-[10px] mt-[20px]">
                 {dog.loading && (
                     <div className="w-[100%] h-[85vh] flex justify-center items-center">
                         <img className="w-[100px]" src="/assets/480 (3).gif" alt="" />
@@ -86,12 +86,12 @@ const DetailPage = () => {
                                         <Link to={'/'} className="text-white text-xl w-[60px] text-center font-bold">&#x3C;</Link>
                                     </span>
                                     <span className=" text-center
-                                    capitalize mb-2 text-3xl font-bold tracking-tight m-[auto]">
+                                    capitalize mb-2 text-3xl text-white font-bold tracking-tight m-[auto]">
                                         {dog.data[0].name}
                                     </span>
                                 </div>
                                 <div className=' relative h-[250px] sm:h-[350px]'> 
-                                    <img className="absolute h-[70%] h-[250px] sm:h-[350px] p-[40px] translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%]" 
+                                    <img className="absolute h-full p-[40px] translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%]" 
                                     src={dog.data[0].image_link}
                                     alt="" />
                                 </div>
@@ -107,7 +107,7 @@ const DetailPage = () => {
                                         <p>Min Life : {dog.data[0].min_life_expectancy} years</p>
                                         <p>Max Life : {dog.data[0].max_life_expectancy} years</p>
                                     </div>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 bg-[#A8C5CD] rounded-b-[20px] gap-[20px] px-[30px] capitalize">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 bg-[#FCCABF] rounded-b-[20px] gap-[20px] px-[30px] capitalize">
                                     {/* <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
                                         <div className="grow-[0] bg-lime-500 h-[15px]"></div>
                                         <div className="grow-[5] bg-[rgb(224,185,180,0.3)] h-[15px]"></div>
@@ -135,49 +135,49 @@ const DetailPage = () => {
                                         <div>
                                             <h5>barking</h5>
                                             <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
-                                                <div className={`grow-[${dog.data[0].barking}] bg-lime-500 h-[15px] `}></div>
+                                                <div className={`grow-[${dog.data[0].barking}] bg-[#2D86FF] h-[15px] `}></div>
                                                 <div className={`grow-[${(5 - dog.data[0].barking)}] bg-[rgb(224,185,180,0.3)] h-[15px]`}></div>
                                             </div>
                                         </div>
                                         <div>
                                             <h5>energy</h5>
                                             <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
-                                                <div className={`grow-[${dog.data[0].energy}] bg-lime-500 h-[15px]`}></div>
+                                                <div className={`grow-[${dog.data[0].energy}] bg-[#2D86FF] h-[15px]`}></div>
                                                 <div className={`grow-[${(5 - dog.data[0].energy)}] bg-[rgb(224,185,180,0.3)] h-[15px]`}></div>
                                             </div>
                                         </div>
                                         <div>
                                             <h5>playfulness</h5>
                                             <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
-                                                <div className={`grow-[${dog.data[0].playfulness}] bg-lime-500 h-[15px]`}></div>
+                                                <div className={`grow-[${dog.data[0].playfulness}] bg-[#2D86FF] h-[15px]`}></div>
                                                 <div className={`grow-[${(5 - dog.data[0].playfulness)}] bg-[rgb(224,185,180,0.3)] h-[15px]`}></div>
                                             </div>
                                         </div>
                                         <div>
                                             <h5>trainability</h5>
                                             <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
-                                                <div className={`grow-[${dog.data[0].trainability}] bg-lime-500 h-[15px]`}></div>
+                                                <div className={`grow-[${dog.data[0].trainability}] bg-[#2D86FF] h-[15px]`}></div>
                                                 <div className={`grow-[${(5 - dog.data[0].trainability)}] bg-[rgb(224,185,180,0.3)] h-[15px]`}></div>
                                             </div>
                                         </div>
                                         <div>
                                             <h5>Save for Children</h5>
                                             <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
-                                                <div className={`grow-[${dog.data[0].good_with_children}] bg-lime-500 h-[15px]`}></div>
+                                                <div className={`grow-[${dog.data[0].good_with_children}] bg-[#2D86FF] h-[15px]`}></div>
                                                 <div className={`grow-[${(5 - dog.data[0].good_with_children)}] bg-[rgb(224,185,180,0.3)] h-[15px]`}></div>
                                             </div>
                                         </div>
                                         <div>
                                             <h5>Save for Other dogs</h5>
                                             <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
-                                                <div className={`grow-[${dog.data[0].good_with_other_dogs}] bg-lime-500 h-[15px]`}></div>
+                                                <div className={`grow-[${dog.data[0].good_with_other_dogs}] bg-[#2D86FF] h-[15px]`}></div>
                                                 <div className={`grow-[${(5 - dog.data[0].good_with_other_dogs)}] bg-[rgb(224,185,180,0.3)] h-[15px]`}></div>
                                             </div>
                                         </div>
                                         <div className="mb-[20px]">
                                             <h5>Save for strangers</h5>
                                             <div className="flex w-[100%] mt-[5px] border-solid border-[0.5px] border-white">
-                                                <div className={`grow-[${dog.data[0].good_with_strangers}] bg-lime-500 h-[15px]`}></div>
+                                                <div className={`grow-[${dog.data[0].good_with_strangers}] bg-[#2D86FF] h-[15px]`}></div>
                                                 <div className={`grow-[${(5 - dog.data[0].good_with_strangers)}] bg-[rgb(224,185,180,0.3)] h-[15px]`}></div>
                                             </div>
                                         </div>
